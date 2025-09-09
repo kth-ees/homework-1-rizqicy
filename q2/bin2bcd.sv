@@ -6,4 +6,6 @@ module bin2bcd (
   // …
   // Add your description here
   // …
+  assign carry = (binary >= 10) ? 1'b1 : 1'b0;
+  assign bcd = (binary >= 10) ? (binary-10) : binary; 
 endmodule
