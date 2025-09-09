@@ -2,6 +2,7 @@
 */transcript
 */*.wlf
 */*.vcd
+*/*.dbg
 
 # build/compile output folder
 */work
