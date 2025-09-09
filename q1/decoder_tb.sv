@@ -11,4 +11,13 @@ module decoder_tb;
   );
 
   // Complete your testbench here
+  initial begin
+    for(int i = 0; i < 16; i++) begin
+      binary = i;
+      #10;
+    end
+    binary = 0;
+    #10;
+    $stop;
+  end
 endmodule
