@@ -1,0 +1,7 @@
+# waveform artifact
+*/transcript
+*/*.wlf
+*/*.vcd
+
+# build/compile output folder
+*/work
