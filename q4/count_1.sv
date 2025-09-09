@@ -5,4 +5,11 @@ module count_1 (
   // …
   // Add your description here
   // …
+  always_comb begin
+    out = '0;
+    for (int i = 0; i <=3; i++) begin
+      if (a[i] == 1'b1)
+        out = out + 1;
+    end
+  end
 endmodule
