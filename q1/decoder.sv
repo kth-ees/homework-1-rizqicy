@@ -2,13 +2,7 @@ module decoder (
   input logic [3:0] binary,
   output logic [15:0] one_hot
 );
-  // …
-  // Add your description here
-  // …
-  // always_comb begin
-  //   one_hot = '0;
-  //   if (binary[3]) begin
-  //     one_hot[binary] = 1'b1;
+  // x0 - x7 HIGH if s4=1 with s3-s0 is the selector
   always_comb begin
     one_hot = '0;
     case (binary)

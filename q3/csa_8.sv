@@ -3,9 +3,7 @@ module csa_8 (
   output logic [7:0] sum,
   output logic carry
 );
-  // …
-  // Add your description here
-  // …
+  // 8-bit adder with Carry Select Adder
   logic c_sel, cout0, cout1;
   logic [3:0]sum3_0;
   logic [3:0]sum_c0;

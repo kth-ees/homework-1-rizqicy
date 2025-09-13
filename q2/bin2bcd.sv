@@ -3,9 +3,7 @@ module bin2bcd (
   output logic [3:0] bcd,
   output logic carry
 );
-  // …
-  // Add your description here
-  // …
+  // BCD decoder with Carry output
   assign carry = (binary >= 10) ? 1'b1 : 1'b0;
   assign bcd = (binary >= 10) ? (binary-10) : binary; 
 endmodule

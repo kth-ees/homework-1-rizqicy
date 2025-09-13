@@ -2,9 +2,7 @@ module count_1 (
   input logic [3:0] a,
   output logic [2:0] out
 );
-  // …
-  // Add your description here
-  // …
+  // One's counter with behavioral description
   always_comb begin
     out = '0;
     for (int i = 0; i <=3; i++) begin
